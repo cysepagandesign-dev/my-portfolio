@@ -1,14 +1,19 @@
-import Image from "next/image";
+import About from "@/components/sections/About";
+import { Contacts } from "@/components/sections/Contacts";
+import Hero from "@/components/sections/Hero";
+import { Projects } from "@/components/sections/Projects";
+import Skills from "@/components/sections/Skills";
+import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <h1 className="text-4xl font-bold">Hi, I’m Joseph</h1>
-        <p className="mt-4 text-lg">
-          Junior Software Engineer building modern web applications.
-        </p>
-      </main>
-    </div>
+    <>
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Testimonials />
+      <Contacts />
+    </>
   );
 }
